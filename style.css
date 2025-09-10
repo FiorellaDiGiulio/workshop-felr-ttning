@@ -1,0 +1,49 @@
+.parent {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  background-color: #111827;
+  color: #E5E7EB;
+  padding: 20px;
+  border-top: 1px solid #374151;
+}
+.div2 { grid-area: 1 / 1 / 2 / 3; }
+.div3 { grid-area: 1 / 3 / 2 / 5; }
+.div4 { grid-area: 1 / 5 / 2 / 7; }
+footer h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+footer a {
+  color: #60A5FA;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+.socials {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.socials li {
+  margin-bottom: 6px;
+}
+@media (max-width: 700px) {
+  .parent {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .div2, .div3, .div4 {
+    grid-area: auto; /* staplas på varandra */
+  }
+}
+
+
+
+
+
+
